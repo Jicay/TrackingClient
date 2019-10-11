@@ -4,7 +4,6 @@ const merge = require("webpack-merge");
 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const APP_DIR = path.resolve(__dirname, '../src'); // <===== new stuff added here
 
@@ -45,7 +44,6 @@ module.exports = env => {
                     'process.env.VERSION': JSON.stringify(VERSION),
                     'process.env.PLATFORM': JSON.stringify(PLATFORM)
                 }),
-                new CopyWebpackPlugin([ { from: 'src/static' } ]),
             ],
         }
     ])
