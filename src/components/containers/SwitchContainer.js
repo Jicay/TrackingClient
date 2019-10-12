@@ -1,7 +1,6 @@
 import {connect} from 'react-redux';
 import SwitchComponent from "../views/SwitchComponent";
 import {fetchSessionIdIfNeeded, sendMousePosition} from "../../redux/action";
-import {compose} from "recompose";
 
 const mapStateToProps = state => {
     return {
@@ -17,6 +16,4 @@ const mapDispatchToProps = (dispatch)  => {
     }
 }
 
-export default compose(
-    connect(mapStateToProps, mapDispatchToProps),
-)(SwitchComponent)
+export default connect(mapStateToProps, mapDispatchToProps)(SwitchComponent)
