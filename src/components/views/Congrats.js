@@ -7,6 +7,11 @@ export default class Congrats extends Component {
         super(props);
     }
 
+    componentDidMount() {
+        const {onLoad} = this.props;
+        onLoad();
+    }
+
     render() {
         return (
             <Container className="congrats">

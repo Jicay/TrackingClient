@@ -7,6 +7,12 @@ export default class Home extends Component {
         super(props);
     }
 
+    componentDidMount() {
+        const {onLoad} = this.props;
+        console.log("Home " + this.props.height + " " + this.props.width);
+        onLoad();
+    }
+
     render() {
         return (
             <div className="home container">

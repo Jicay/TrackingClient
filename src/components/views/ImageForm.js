@@ -8,9 +8,12 @@ export default class ImageForm extends Component {
         super(props);
     }
 
+    componentDidMount() {
+        const {onLoad} = this.props;
+        onLoad();
+    }
+
     render() {
-        console.log(this.props);
-        console.log(this.props.match.params.imageUrl);
         const {history, match} = this.props;
         const imageUrl = match.params.imageUrl.replace('-', '/');
 

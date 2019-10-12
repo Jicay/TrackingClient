@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {Link} from "react-router-dom";
 
 export default class Image extends Component {
 
@@ -13,9 +14,9 @@ export default class Image extends Component {
 
         return (
             <div className='col align-content-center'>
-                <a href={'/images/' + pathVariable}>
+                <Link to={'/images/' + pathVariable}>
                     <img className="img-fluid" src={'https://live.staticflickr.com/' + image + '.jpg'}/>
-                </a>
+                </Link>
             </div>
         )
     }
