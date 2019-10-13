@@ -14,7 +14,7 @@ export default class Congrats extends Component {
 
     render() {
         return (
-            <Container className="congrats">
+            <Container className="congrats" id="page">
                 <div>
                     Bravo pour avoir soumis !
                 </div>

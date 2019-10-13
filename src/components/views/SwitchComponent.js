@@ -27,13 +27,14 @@ export default class SwitchComponent extends Component {
     tick() {
         const {page, sessionId, sendMousePosition} = this.props;
         const {x, y} = this.state;
-        const height = document.getElementById('app').offsetHeight;
-        const width = document.getElementById('app').offsetWidth;
+        const height = document.getElementById('page').clientHeight;
+        const width = document.getElementById('page').clientWidth;
+        console.log(x, y, width, height);
         sendMousePosition(x/width, y/height, page, sessionId);
     }
 
     _onMouseMove(e) {
-        this.setState({x: e.nativeEvent.x, y: e.nativeEvent.offsetY});
+        this.setState({x: e.nativeEvent.x, y: e.nativeEvent.y});
     }
 
     render() {

@@ -15,7 +15,7 @@ export default class Home extends Component {
 
     render() {
         return (
-            <div className="home container">
+            <div className="home container" id="page" >
                 <div className="row  justify-content-center">
                     <Image image={'916/43406628822_cffd9b699e_b'}/>
                     <Image image={'65535/48877432621_ff264905ac_b'}/>

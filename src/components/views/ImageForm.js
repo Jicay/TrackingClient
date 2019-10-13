@@ -18,7 +18,7 @@ export default class ImageForm extends Component {
         const imageUrl = match.params.imageUrl.replace('-', '/');
 
         return (
-            <Container className="image container">
+            <Container className="image container" id="page" >
                 <div className='row'>
                     <Image image={imageUrl}/>
                 </div>
