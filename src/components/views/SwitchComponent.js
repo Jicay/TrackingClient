@@ -16,7 +16,7 @@ export default class SwitchComponent extends Component {
         onLoad();
         this.intervalID = setInterval(
             () => this.tick(),
-            1000
+            100
         );
     }
 
@@ -29,7 +29,6 @@ export default class SwitchComponent extends Component {
         const {x, y} = this.state;
         const height = document.getElementById('page').clientHeight;
         const width = document.getElementById('page').clientWidth;
-        console.log(x, y, width, height);
         sendMousePosition(x/width, y/height, page, sessionId);
     }
 

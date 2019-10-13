@@ -4,6 +4,7 @@ import {Provider} from 'react-redux'
 import {applyMiddleware, createStore} from 'redux';
 import thunk from 'redux-thunk';
 import rootReducer from "./redux/reducers.js";
+import "./myStyles.scss";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SwitchContainer from "./components/containers/SwitchContainer";
