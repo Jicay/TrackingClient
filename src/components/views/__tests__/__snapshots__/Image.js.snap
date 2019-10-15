@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="col align-content-center"
+>
+  <a
+    href="/images/skfjlsf-psdofispdofi"
+    onClick={[Function]}
+  >
+    <img
+      className="img-fluid"
+      src="https://live.staticflickr.com/skfjlsf/psdofispdofi.jpg"
+    />
+  </a>
+</div>
+`;

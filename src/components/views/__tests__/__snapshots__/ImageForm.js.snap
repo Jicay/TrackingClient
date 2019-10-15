@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="image container container"
+  id="page"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col align-content-center"
+    >
+      <a
+        href="/images/45645-qddfsfd8754fs"
+        onClick={[Function]}
+      >
+        <img
+          className="img-fluid"
+          src="https://live.staticflickr.com/45645/qddfsfd8754fs.jpg"
+        />
+      </a>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          htmlFor="inputMail"
+        >
+          Email :
+        </label>
+        <input
+          id="inputMail"
+          onChange={[Function]}
+          placeholder="Saisissez votre adresse e-mail"
+          type="email"
+          value=""
+        />
+      </div>
+      <button
+        className="btn btn-primary"
+        type="submit"
+      >
+        Envoyer
+      </button>
+    </form>
+  </div>
+</div>
+`;

@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="form-group"
+  >
+    <label
+      htmlFor="inputMail"
+    >
+      Email :
+    </label>
+    <input
+      id="inputMail"
+      onChange={[Function]}
+      placeholder="Saisissez votre adresse e-mail"
+      type="email"
+      value=""
+    />
+  </div>
+  <button
+    className="btn btn-primary"
+    type="submit"
+  >
+    Envoyer
+  </button>
+</form>
+`;

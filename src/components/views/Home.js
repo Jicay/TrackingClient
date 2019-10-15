@@ -9,7 +9,6 @@ export default class Home extends Component {
 
     componentDidMount() {
         const {onLoad} = this.props;
-        console.log("Home " + this.props.height + " " + this.props.width);
         onLoad();
     }
 

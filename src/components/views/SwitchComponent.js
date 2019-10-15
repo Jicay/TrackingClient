@@ -38,7 +38,7 @@ export default class SwitchComponent extends Component {
 
     render() {
         return (
-            <div onMouseMove={this._onMouseMove.bind(this)} ref={ (divElement) => this.divElement = divElement}>
+            <div onMouseMove={this._onMouseMove.bind(this)}>
                 <BrowserRouter>
                     <Switch>
                         <Route exact path="/" component={HomeContainer}/>
