@@ -1,6 +1,5 @@
 import {fetchCurrentPage} from "../../redux/action";
-import connect from "react-redux/es/connect/connect";
-import ImageForm from "../views/ImageForm";
+import {connect} from "react-redux";
 import Congrats from "../views/Congrats";
 
 const mapStateToProps = state => {

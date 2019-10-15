@@ -1,5 +1,5 @@
 import {fetchCurrentPage} from "../../redux/action";
-import connect from "react-redux/es/connect/connect";
+import { connect } from "react-redux";
 import Home from "../views/Home";
 
 const mapStateToProps = state => {
