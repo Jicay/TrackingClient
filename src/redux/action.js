@@ -1,3 +1,4 @@
+import {BACK_URL} from "../config";
 
 export const RECEIVE_SESSION_ID = 'RECEIVE_SESSION_ID';
 export const CHANGE_CURRENT_PAGE = 'CHANGE_CURRENT_PAGE';
@@ -12,7 +13,7 @@ export const fetchSessionIdIfNeeded = () => (dispatch) => {
 }
 
 const fetchSessionId = () => dispatch => {
-    return fetch(`https://tracking-mouse-back.herokuapp.com/sessions`, {method: 'POST'})
+    return fetch(BACK_URL + `/sessions`, {method: 'POST'})
         .then(response => response.json())
         .then(json => {dispatch(receiveSessionId(json))})
 }
@@ -27,7 +28,7 @@ export const updatePage = (page) => ({
 })
 
 export const sendMousePosition = (x, y, page, sessionId) => dispatch => {
-    return fetch(`https://tracking-mouse-back.herokuapp.com/sessions/` + sessionId + '/mouse-positions',
+    return fetch(BACK_URL + '/sessions/' + sessionId + '/mouse-positions',
         {
             method: 'POST',
             headers: {
